@@ -1,0 +1,102 @@
+/* journal-config = параметры одной страницы для настройки размеров через JS */
+
+#journal-config {
+	width:  325px;
+	height: 460px;
+	display: none;
+}
+
+/* styles for journal-slide */
+
+#journal { margin: 50px auto; }
+#slideshow {
+	position:relative;
+	margin:0 auto;
+}
+
+/* control */
+
+#slideshow .control {
+   display:block;
+   position:absolute;
+   top:100px;
+   left:-35px;
+   width:20px;
+   height:50px;
+   background: url("slider_scroll_red.png") no-repeat scroll 0 0 transparent;
+}
+#slideshow #leftControl {
+	background-position: -20px 0;
+	cursor:pointer;
+}
+#slideshow #leftControl:hover {
+	background-position: 0 0;
+	cursor:pointer;
+}
+#slideshow #rightControl {
+	background-position: -20px -50px;
+	cursor:pointer;
+	left:0;
+}
+#slideshow #rightControl:hover {
+	background-position: 0 -50px;
+	cursor:pointer;
+}
+
+/* slide */
+
+#slideshow .slide { overflow: hidden; }
+#slideshow .slide div { overflow: hidden; display: inline; }
+#slideshow  .slide img {
+   float: left;
+   border: 1px solid #eee;
+}
+#slideshow  .slide img.notpage { border: none; }
+
+/* тень */
+
+#slideshow  .journal-shadow {
+   display:block;
+   position:absolute; top:0; left:0;
+   background: url("shadow.png") repeat-y scroll left top transparent;
+   z-index:95;
+}
+
+/* flip-block */
+
+#slideshow #flipblock {
+   position:absolute; top:0; left:0; z-index:80;
+   overflow: hidden; display: block;
+}
+#slideshow #flipblock .flipold ,
+#slideshow #flipblock .flipnew  {position:absolute; top:0; left:0;}
+#slideshow #flipblock .flipold div,
+#slideshow #flipblock .flipnew div  {
+   float:left;
+   overflow: hidden; display: block;
+}
+#slideshow #flipblock img {
+  display: block;
+  border: 1px solid #eee;
+}
+#slideshow  #flipblock img.notpage { border: none; }
+
+/*
+.slide .caption {
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+  border-top: 1px solid #000;
+  bottom: -35px;
+  color: #fff;
+  font-size: 1.3em;
+  height: 60px;
+  left: 0;
+  line-height: 1.33;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  text-shadow: none;
+  width: 300px;
+  z-index: 500;
+}
+.slide .caption A {color: white;}
+*/
