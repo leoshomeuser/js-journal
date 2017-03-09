@@ -1,2 +1,2 @@
 # js-journal
-imitation listings
+Slider simulator paging book
