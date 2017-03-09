@@ -1,4 +1,4 @@
-// источник http://ruseller.com/lessons.php?rub=32&id=1050
+// разработан на основе http://ruseller.com/lessons.php?rub=32&id=1050
 $(document).ready(function(){
 	// встроить управление (стрелки), блок перелистывания, тень
 	$('#slideshow').append('<div id="leftControl"  class="control"></div><div id="rightControl" class="control"></div>');
